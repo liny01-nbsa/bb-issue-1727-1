@@ -1,0 +1,8 @@
+{:min-bb-version "1.3.0"
+ :tasks
+ {:requires
+  ([babashka.process :refer [check]]
+   [clojure.edn :as edn])
+
+  int
+  (shell "cmd" "/c" "echo" "hello")}}
