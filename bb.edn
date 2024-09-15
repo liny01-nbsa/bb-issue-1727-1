@@ -4,5 +4,9 @@
   ([babashka.process :refer [check]]
    [clojure.edn :as edn])
 
+  :init
+  (try (slurp ".constants.edn")
+       (catch Exception ex "{}"))
+
   int
   (shell "cmd" "/c" "echo" "hello")}}
